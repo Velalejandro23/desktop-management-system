@@ -1,0 +1,75 @@
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+
+# ==============================
+# Configuración local y secretos
+# ==============================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==============================
+# IDE y sistema operativo
+# ==============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ==============================
+# Logs y archivos temporales
+# ==============================
+*.log
+logs/
+tmp/
+temp/
+
+# ==============================
+# Compilación y distribución
+# ==============================
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==============================
+# Ejecutables de PyInstaller
+# ==============================
+*.spec.bak
+
+# ==============================
+# Bases de datos
+# ==============================
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+
+# Archivos auxiliares y respaldos
+*.db-journal
+*.sqlite-journal
+*.sqlite3-journal
+*.db-wal
+*.db-shm
+*.sqlite-wal
+*.sqlite-shm
+
+# Respaldos de bases de datos
+*.bak
+*.dump

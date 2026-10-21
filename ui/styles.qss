@@ -1,0 +1,222 @@
+/* styles.qss */
+
+/* General Window Styles */
+QWidget {
+    background-color: #f4f6f9;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #333;
+}
+
+/* Labels */
+QLabel {
+    font-size: 14px;
+}
+
+QLabel#titulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0A3D62; /* Dark Blue */
+}
+
+QLabel#subtitulo {
+    font-size: 16px;
+    color: #3c6382; /* Desaturated Blue */
+}
+
+/* Line Edits (Text Inputs) */
+QLineEdit {
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+QLineEdit:focus {
+    border: 1px solid #1e90ff; /* Dodge Blue on focus */
+}
+
+/* General Buttons */
+QPushButton {
+    background-color: #1e90ff; /* Dodger Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #1c86ee; /* Slightly Darker Blue */
+}
+
+QPushButton:pressed {
+    background-color: #1874cd; /* Even Darker Blue */
+}
+
+/* --- Main View Specific Styles --- */
+
+/* Side Menu Frame */
+#menuFrame {
+    background-color: #0A3D62; /* Dark Blue */
+}
+
+#menuTitulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000; /* Changed from #ffffff to #000000 for visibility testing */
+}
+
+/* Side Menu Buttons */
+#menuButton {
+    background-color: transparent;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: normal;
+}
+
+#menuButton:hover {
+    background-color: #1e5799; /* Darker blue for hover */
+}
+
+#menuButton:checked { /* Style for the active/selected button */
+    background-color: #1e90ff; /* Dodger Blue */
+    font-weight: bold;
+}
+
+/* --- Empleados View Specific Styles --- */
+
+#newButton, #newVisitButton {
+    background-color: #28a745; /* Green */
+}
+#newButton:hover, #newVisitButton:hover {
+    background-color: #218838;
+}
+
+#editButton {
+    background-color: #6c757d; /* Gray */
+}
+#editButton:hover {
+    background-color: #5a6268;
+}
+
+#deleteButton {
+    background-color: #dc3545; /* Red */
+}
+#deleteButton:hover {
+    background-color: #c82333;
+}
+
+/* --- Calendar View Specific Styles --- */
+
+#calendarTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#dayListLabel {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+QCalendarWidget QWidget#qt_calendar_navigationbar {
+    background-color: #0A3D62;
+}
+
+QCalendarWidget QToolButton {
+    color: #333;
+    font-size: 14px;
+    icon-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Add small horizontal spacing between month and year controls */
+QCalendarWidget QComboBox {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+QCalendarWidget QMenu {
+    background-color: white;
+}
+
+QCalendarWidget QSpinBox {
+    color: #333;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 6px; /* separate from month selector */
+    margin-right: 6px;
+}
+
+QCalendarWidget QAbstractItemView:enabled {
+    font-size: 13px;  
+    color: #333;
+    background-color: white;
+    selection-background-color: #1e90ff;
+    selection-color: white;
+}
+
+QCalendarWidget QAbstractItemView:disabled { 
+    color: #b0b0b0; 
+}
+
+#visitList {
+    border: 1px solid #dcdcdc;
+    background-color: white;
+    font-size: 14px;
+}
+
+
+/* Table Views */
+QTableView, QTableWidget {
+    border: 1px solid #dcdcdc;
+    gridline-color: #f0f0f0;
+    background-color: #ffffff;
+    selection-background-color: #0078d7; /* Standard blue for selection if not overridden */
+    selection-color: white;
+    outline: none; /* Remove dotted focus border */
+}
+
+QTableWidget::item {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+QTableWidget::item:selected {
+    background-color: #e3f2fd; /* Light Blue background for selected row */
+    color: #0A3D62; /* Dark Blue text for contrast */
+    border-bottom: 2px solid #1e90ff;
+}
+
+QTableWidget::item:hover {
+    background-color: #f5faff; /* Very subtle blue when hovering */
+}
+
+QHeaderView::section {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #dee2e6;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Message Box */
+QMessageBox {
+    background-color: #ffffff;
+}
